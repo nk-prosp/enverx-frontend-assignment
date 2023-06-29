@@ -1,7 +1,12 @@
 import { styled } from "styled-components";
+import HomePage from "./container/HomePage";
 
 function App() {
-    return <AppWrapper></AppWrapper>;
+    return (
+        <AppWrapper>
+            <HomePage />
+        </AppWrapper>
+    );
 }
 
 export default App;
