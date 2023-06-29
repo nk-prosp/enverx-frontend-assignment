@@ -1,9 +1,11 @@
+import { transactions } from "../dummyData";
+
 const transactionService = {
     getTransactions: async () => {
-        return;
+        return { data: transactions };
     },
     addTransaction: async (data) => {
-        return;
+        return { data: data };
     },
 };
 
