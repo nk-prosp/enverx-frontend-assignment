@@ -3,12 +3,11 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
-import { transactions } from "../../dummyData";
 import { TYPES } from "../../container/HomePage/constants";
 import { Divider } from "@mui/material";
 import { getFormattedDate } from "../../utils/dateTime";
 
-export default function Transactions({ items = transactions }) {
+export default function Transactions({ items = [] }) {
     return (
         <List sx={{ width: "100%", bgColor: "background.paper" }}>
             {items.map((it) => {
